@@ -49,7 +49,14 @@ This workflow is designed to be:
 ### Time‑series charts
 - GRACE TWS anomaly  
 - Near‑surface storage (soil + canopy)  
-- Subsurface residual proxy  
+- Subsurface residual proxy
+
+## Documentation
+
+- [Scientific Methods](../methods/methods.md)
+- [Stakeholder Narrative](../stakeholder/narrative.md)
+- [Executive Summary](../executive/executive_summary.md)
+
 
 ## Interpretation
 
