@@ -1,1 +1,27 @@
-
+cff-version: 1.2.0
+message: "If you use this workflow, please cite it using the metadata below."
+title: "Amazon Aquifer System Proxy: GRACE–GLDAS Residual Storage Workflow"
+authors:
+  - family-names: Morton
+    given-names: Daniel
+    affiliation: "ARGANS"
+version: "1.0.0"
+date-released: "2025-01-30"
+url: "https://github.com/<your-username>/<your-repo>"
+repository-code: "https://github.com/<your-username>/<your-repo>"
+keywords:
+  - GRACE
+  - GLDAS
+  - groundwater
+  - hydrology
+  - Amazon Basin
+  - remote sensing
+  - water storage
+  - Earth Engine
+abstract: >
+  This repository implements an Amazon-safe workflow for estimating subsurface
+  water-storage trends using GRACE total water storage, GLDAS soil and canopy
+  water, and conservative JRC water-occurrence masking. The workflow produces
+  deseasonalised residual storage anomalies, robust Theil–Sen trends, quality
+  metrics, and hotspot classifications suitable for basin-scale hydrological
+  monitoring and scientific reporting.
