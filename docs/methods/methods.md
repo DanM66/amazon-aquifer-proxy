@@ -2,7 +2,7 @@
 
 ## 1. Data Sources
 
-This workflow uses three satellite-based datasets to construct a subsurface water-storage proxy for the Amazon Basin:
+This workflow uses three satellite-based datasets to construct a **residual subsurface water-storage proxy** for the Amazon Basin:
 
 ### GRACE MASCON v04
 - Monthly total water storage anomalies (TWS)
@@ -59,7 +59,7 @@ cm = mm / 10
 non_gw = soil_total + canopy
 ```
 
-This represents near-surface water that must be removed from GRACE TWS to isolate deeper storage.
+This represents **near-surface water components explicitly modelled by GLDAS**, which are subtracted from GRACE TWS to form a residual storage proxy.
 
 ---
 
@@ -104,13 +104,13 @@ mask = occurrence < 95%
 
 Pixels with 95% or greater water occurrence are masked.
 
-This removes persistent open water while retaining seasonally flooded forests.
+This removes persistent open water while retaining seasonally flooded forests and wetlands typical of the Amazon basin.
 
 ---
 
 ## 7. Residual Storage Proxy
 
-A subsurface storage proxy is computed:
+A residual subsurface storage proxy is computed:
 
 ```
 gws_residual = GRACE_TWS - non_gw
@@ -122,7 +122,7 @@ A masked version is produced:
 gws_residual_masked = gws_residual * JRC_mask
 ```
 
-This residual represents deeper storage components not captured by GLDAS.
+This residual represents **water storage components observed by GRACE that are not explicitly modelled by GLDAS**, and should not be interpreted as groundwater alone.
 
 ---
 
@@ -193,6 +193,8 @@ slope >= -0.20 cm/year
 slope < -0.50 cm/year
 ```
 
+Hotspots identify areas of **persistent decline in residual subsurface and unmodelled water storage**.
+
 ---
 
 ## 12. Visualisation
@@ -211,7 +213,7 @@ For the aquifer geometry, monthly means are plotted for:
 
 - GRACE TWS
 - Near-surface storage
-- Subsurface residual storage
+- Residual subsurface storage proxy
 
 ---
 
@@ -226,4 +228,3 @@ A multi-band raster is exported containing:
 - Hotspot class
 
 Exports use the Amazon window and a 60 km scale to match GRACE resolution.
-
