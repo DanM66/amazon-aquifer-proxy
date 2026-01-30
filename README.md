@@ -53,9 +53,9 @@ This workflow is designed to be:
 
 ## Documentation
 
-- [Scientific Methods](../methods/methods.md)
-- [Stakeholder Narrative](../stakeholder/narrative.md)
-- [Executive Summary](../executive/executive_summary.md)
+- [Scientific Methods](docs/methods/methods.md)
+- [Stakeholder Narrative](docs/stakeholder/narrative.md)
+- [Executive Summary](docs/executive/executive_summary.md)
 
 
 ## Interpretation
