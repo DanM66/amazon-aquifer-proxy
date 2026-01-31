@@ -1,6 +1,6 @@
 # Amazon Aquifer System Proxy: GRACE–GLDAS Residual Storage Workflow
 
-This repository implements an Amazon-safe workflow for estimating **subsurface and unmodelled water-storage trends** using GRACE Total Water Storage (TWS), GLDAS soil and canopy water, and a conservative JRC surface-water mask. The workflow produces deseasonalised residual storage anomalies, robust Theil–Sen trends, quality metrics, and hotspot classifications.
+This repository implements a workflow for estimating **subsurface and unmodelled water-storage trends** using GRACE Total Water Storage (TWS), GLDAS soil and canopy water, and a conservative JRC surface-water mask. The workflow produces deseasonalised residual storage anomalies, robust Theil–Sen trends, quality metrics, and hotspot classifications.
 
 ## Overview
 
