@@ -1,3 +1,21 @@
+# Changelog
+
+## v2 – GRACE–GLDAS subsurface storage screening update
+## v2 – GRACE–GLDAS subsurface storage screening update
+
+- Added Snow Water Equivalent (SWE) to the GLDAS near-surface storage term.
+- Introduced defensive monthly GLDAS aggregation to avoid empty or malformed months.
+- Capped requested end date to last available GRACE month to prevent future-date failures.
+- Aligned completeness calculation with Earth Engine filterDate semantics.
+- Added two-tier quality screening (exploratory and conservative) and hotspot overlap shortlist.
+- Added split-period trend stability assessment (early vs late).
+- Added area-weighted volumetric trend output (km³/year).
+- Adjusted display layers to avoid transparency artefacts (analysis unchanged).
+
+
+## v1 – Initial Amazon aquifer proxy
+
+
 # Amazon Aquifer System Proxy: GRACE–GLDAS Residual Storage Workflow
 
 This repository implements a workflow for estimating **subsurface and unmodelled water-storage trends** using GRACE Total Water Storage (TWS), GLDAS soil and canopy water, and a conservative JRC surface-water mask. The workflow produces deseasonalised residual storage anomalies, robust Theil–Sen trends, quality metrics, and hotspot classifications.
